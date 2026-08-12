@@ -1,0 +1,15 @@
+{
+  "name": "bugsmash",
+  "description": "Official BugSmash plugins for visual review and feedback workflows.",
+  "owner": {
+    "name": "BugSmash"
+  },
+  "plugins": [
+    {
+      "name": "bugsmash",
+      "source": "./plugins/bugsmash",
+      "description": "Manage BugSmash reviews and feedback through OAuth.",
+      "version": "1.0.0"
+    }
+  ]
+}

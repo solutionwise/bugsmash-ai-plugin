@@ -1,0 +1,20 @@
+{
+  "name": "bugsmash",
+  "interface": {
+    "displayName": "BugSmash"
+  },
+  "plugins": [
+    {
+      "name": "bugsmash",
+      "source": {
+        "source": "local",
+        "path": "./plugins/bugsmash"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

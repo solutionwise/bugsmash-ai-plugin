@@ -1,0 +1,37 @@
+{
+  "name": "bugsmash",
+  "version": "1.0.0",
+  "description": "Manage BugSmash reviews and feedback through the hosted OAuth MCP server.",
+  "author": {
+    "name": "BugSmash",
+    "url": "https://bugsmash.io"
+  },
+  "homepage": "https://docs.bugsmash.io",
+  "repository": "https://github.com/solutionwise/bugsmash-ai-plugin",
+  "keywords": [
+    "bugsmash",
+    "visual-review",
+    "feedback",
+    "qa",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BugSmash",
+    "shortDescription": "Manage visual reviews and feedback",
+    "longDescription": "Create and manage BugSmash projects, versions, folders, comments, replies, and webhooks. Sign in with BugSmash OAuth. No API key is required.",
+    "developerName": "BugSmash",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://bugsmash.io",
+    "defaultPrompt": [
+      "Summarize active feedback in my BugSmash projects.",
+      "Create a BugSmash review project for this website.",
+      "List my BugSmash projects and their latest versions."
+    ]
+  }
+}

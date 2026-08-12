@@ -1,0 +1,11 @@
+{
+  "name": "bugsmash",
+  "description": "Manage BugSmash reviews and feedback through the hosted OAuth MCP server.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BugSmash",
+    "url": "https://bugsmash.io"
+  },
+  "homepage": "https://docs.bugsmash.io",
+  "repository": "https://github.com/solutionwise/bugsmash-ai-plugin"
+}
