@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "bugsmash-test": {
+    "bugsmash": {
       "type": "http",
       "url": "https://bugsmash-backend.swdv.duckdns.org/mcp"
     }
