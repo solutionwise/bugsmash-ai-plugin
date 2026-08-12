@@ -5,7 +5,7 @@
 The hosted endpoint must be available at:
 
 ```text
-https://api.bugsmash.io/mcp
+https://bugsmash-backend.swdv.duckdns.org/mcp
 ```
 
 An unauthenticated request must return `401 Unauthorized` with a `WWW-Authenticate` header that points to the BugSmash protected-resource metadata.
@@ -38,7 +38,7 @@ Confirm that the BugSmash MCP server is connected.
 
 1. Open **Customize → Connectors**.
 2. Select **Add custom connector**.
-3. Enter `https://api.bugsmash.io/mcp`.
+3. Enter `https://bugsmash-backend.swdv.duckdns.org/mcp`.
 4. Leave client credentials empty. BugSmash supports dynamic client registration.
 5. Select **Connect**.
 6. Sign in to BugSmash, select a workspace, and approve access.

@@ -5,7 +5,7 @@ This repository packages the BugSmash hosted MCP server for Codex and Claude Cod
 The plugin connects to:
 
 ```text
-https://api.bugsmash.io/mcp
+https://bugsmash-backend.swdv.duckdns.org/mcp
 ```
 
 BugSmash uses OAuth 2.1 with PKCE. Users sign in through their browser, select a workspace, and approve access. The plugin does not request, store, or proxy a BugSmash API key.
@@ -63,7 +63,7 @@ Run `/reload-plugins` after installation. Use `/mcp` if Claude Code asks you to 
 The plugin package is not required for a direct Claude connector test. In Claude, open **Customize → Connectors → Add custom connector** and enter:
 
 ```text
-https://api.bugsmash.io/mcp
+https://bugsmash-backend.swdv.duckdns.org/mcp
 ```
 
 Then select **Connect** and complete the BugSmash OAuth flow.
