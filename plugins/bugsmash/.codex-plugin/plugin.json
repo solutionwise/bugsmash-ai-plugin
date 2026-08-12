@@ -27,6 +27,8 @@
       "Read",
       "Write"
     ],
+    "composerIcon": "./assets/bugsmash-icon.svg",
+    "logo": "./assets/bugsmash-icon.svg",
     "websiteURL": "https://bugsmash.io",
     "defaultPrompt": [
       "Summarize active feedback in my BugSmash projects.",
