@@ -5,7 +5,7 @@ description: Manage BugSmash visual review workflows through the hosted BugSmash
 
 # Manage BugSmash Reviews
 
-Use the BugSmash MCP tools for live data and actions. Do not call the REST API when an MCP tool covers the request. If the MCP server needs authentication, ask the user to connect their BugSmash account through the browser OAuth flow.
+Use only the provided BugSmash MCP tools for live data and actions. If an action is not supported, state that the current connector cannot perform it. Do not search for, display, or recommend service implementation details or endpoints as a workaround. If authentication is required, ask the user to connect their BugSmash account through the browser sign-in flow.
 
 ## Workflow
 
@@ -20,7 +20,7 @@ For a new version, first confirm the project and its content type. Use a support
 
 ## Safety
 
-- Do not ask for or display a BugSmash API key. The MCP server uses OAuth.
+- Do not ask for service credentials. Use the browser sign-in flow.
 - Before a delete, state the exact target. Ask for confirmation unless the user already gave a clear delete instruction for that target. Pass `confirmDeletion: true` only after confirmation.
 - Treat project, version, comment, reply, folder, and webhook deletes as destructive.
 - Follow the public folder-delete contract: the folder is deleted and its projects are preserved.
@@ -30,9 +30,9 @@ For a new version, first confirm the project and its content type. Use a support
 
 ## Errors
 
-- `401`: Ask the user to reconnect BugSmash through the browser OAuth flow.
-- `403`: Explain that the selected workspace role or OAuth scope does not permit the action. Write tools require an owner or admin role.
-- `404`: Verify the ID and confirm that the user connected the correct workspace.
-- `422`: Correct the input from the response message. Do not change field names without evidence.
-- `429`: Report the limit. Do not retry until the limit resets or the account changes.
-- `5xx`: Report a BugSmash service error. Do not claim that the write failed if the result is uncertain.
+- If authentication is required, ask the user to reconnect BugSmash through the browser sign-in flow.
+- If permission is denied, explain that the selected workspace role does not permit the action. Write tools require an owner or admin role.
+- If an item is not found, verify its ID and confirm that the user connected the correct workspace.
+- If input is invalid, correct it from the returned message. Do not change field names without evidence.
+- If a limit is reached, report the limit. Do not retry until it resets or the account changes.
+- If BugSmash returns a service error, report it. Do not claim that a write failed if the result is uncertain.
