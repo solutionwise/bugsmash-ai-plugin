@@ -16,7 +16,9 @@ Use only the provided BugSmash MCP tools for live data and actions. If an action
 
 For feedback summaries, request plain text and location metadata. Show active comments before resolved comments. Preserve comment numbers and IDs so the user can act on the result.
 
-For a new version, first confirm the project and its content type. Use a supported public URL. The hosted MCP server cannot read a local file path from the user's computer.
+For project and version creation, identify the content type first. Use `websiteUrl` for website reviews. For file-based reviews, pass each public HTTP or HTTPS file URL with its exact file name and extension. Image projects can accept multiple files. Other file-based types accept one file. The hosted connector cannot read a local file path from the user's computer.
+
+For a comment attachment update, pass one public HTTP or HTTPS image URL with its exact JPG, JPEG, PNG, or SVG file name.
 
 ## Safety
 
