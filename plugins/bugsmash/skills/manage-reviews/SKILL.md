@@ -16,9 +16,13 @@ Use only the provided BugSmash MCP tools for live data and actions. If an action
 
 For feedback summaries, request plain text and location metadata. Show active comments before resolved comments. Preserve comment numbers and IDs so the user can act on the result.
 
-For project and version creation, identify the content type first. Use `websiteUrl` for website reviews. For file-based reviews, pass each public HTTP or HTTPS file URL with its exact file name and extension. Image projects can accept multiple files. Other file-based types accept one file. The hosted connector cannot read a local file path from the user's computer.
+For project and version creation, identify the content type first. Use `websiteUrl` for website reviews. Image projects can accept multiple files. Other file-based types accept one file.
 
-For a comment attachment update, pass one public HTTP or HTTPS image URL with its exact JPG, JPEG, PNG, or SVG file name.
+When the user provides a local file or chat attachment, use `prepare_file_upload` for each file. Upload the exact file bytes to the returned short-lived URL with the returned method and headers. Do not display the upload URL. Pass only the returned `uploadId` to the project, version, or comment tool. This upload is the only allowed non-MCP transfer in this workflow. Do not call or describe service endpoints.
+
+Use a public HTTP or HTTPS file URL with its exact file name only when local file access is unavailable or the user already supplied a URL.
+
+For a comment attachment update, prepare one JPG, JPEG, PNG, or SVG upload and pass its upload ID.
 
 ## Safety
 
@@ -28,6 +32,7 @@ For a comment attachment update, pass one public HTTP or HTTPS image URL with it
 - Follow the public folder-delete contract: the folder is deleted and its projects are preserved.
 - Tell the user when a write creates or changes a public review link.
 - Never display an OAuth token or webhook signing secret.
+- Never display, store, or reuse a temporary upload URL.
 - Do not retry a write automatically after a timeout. Read current state first to prevent a duplicate write.
 
 ## Errors

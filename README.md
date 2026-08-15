@@ -13,6 +13,7 @@ BugSmash uses OAuth 2.1 with PKCE. Users sign in through their browser, select a
 ## Capabilities
 
 - List, read, create, update, and delete projects
+- Create file-based reviews from local files and chat attachments
 - List, read, create, and delete versions
 - List, read, create, update, and delete folders
 - List and read comments and replies
@@ -80,6 +81,10 @@ List my BugSmash projects. Do not change anything.
 
 ```text
 Create a BugSmash review project named MCP Test for https://example.com.
+```
+
+```text
+Create a BugSmash image review project from this attached screenshot.
 ```
 
 ```text

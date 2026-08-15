@@ -50,9 +50,10 @@ Confirm that the BugSmash MCP server is connected.
 2. Read one project and its versions.
 3. List comments for a project.
 4. Create a test project as a workspace owner or admin.
-5. Update the test project.
-6. Request deletion and verify that the agent asks for confirmation.
-7. Confirm the deletion and verify the result.
-8. Revoke the OAuth connection in BugSmash and verify that the old connection no longer works.
+5. Create an image project from a local screenshot and verify the review link.
+6. Update the test project.
+7. Request deletion and verify that the agent asks for confirmation.
+8. Confirm the deletion and verify the result.
+9. Revoke the OAuth connection in BugSmash and verify that the old connection no longer works.
 
 Also test a member account. Read tools must work. Write tools must return a permission error.

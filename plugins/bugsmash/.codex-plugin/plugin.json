@@ -1,6 +1,6 @@
 {
   "name": "bugsmash",
-  "version": "1.0.0+codex.20260812175431",
+  "version": "1.1.0+codex.20260815",
   "description": "Manage BugSmash reviews and feedback through the hosted OAuth MCP server.",
   "author": {
     "name": "BugSmash",
