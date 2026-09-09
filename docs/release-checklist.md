@@ -15,7 +15,7 @@
 - Run `claude plugin validate .` and `claude plugin validate ./plugins/bugsmash`.
 - Install both local marketplaces in clean Codex and Claude Code environments.
 - Confirm that browser OAuth completes without an API key or client secret.
-- Confirm that all 26 hosted MCP tools are visible.
+- Confirm that all 28 hosted MCP tools are visible.
 - Add final BugSmash logo assets when approved.
 - Add verified privacy policy, terms, and support URLs to the store listings.
 

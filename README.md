@@ -8,18 +8,19 @@ The plugin connects to:
 https://api.bugsmash.io/mcp
 ```
 
-BugSmash uses OAuth 2.1 with PKCE. Users sign in through their browser, select a workspace, and approve access. The plugin does not request, store, or proxy a BugSmash API key.
+BugSmash uses OAuth 2.1 with PKCE. Users sign in through their browser and approve access. The connection can use each MCP-enabled workspace where the user is an owner, admin, or member. The plugin does not request, store, or proxy a BugSmash API key.
 
 ## Capabilities
 
+- Prepare private uploads for local file attachments
 - List, read, create, update, and delete projects
 - List, read, create, and delete versions
 - List, read, create, update, and delete folders
-- List and read comments and replies
-- Create replies and update or delete feedback
-- List, create, update, test, and delete webhooks
+- List, read, create, update, and delete comments
+- List, create, and delete replies
+- List, update, test, and delete webhooks
 
-Write tools require a BugSmash workspace owner or admin role. Delete tools require explicit confirmation.
+Tools use the same role, plan, and usage limits as BugSmash. Guests and collaborators cannot access a workspace through MCP. Delete tools require explicit confirmation.
 
 ## Repository layout
 
@@ -90,4 +91,10 @@ Delete the MCP Test project after I confirm the exact project.
 
 - [BugSmash API documentation](https://docs.bugsmash.io)
 - [BugSmash help center](https://helpcenter.bugsmash.io)
+- [Privacy policy](https://bugsmash.io/privacy-policy/)
+- [Terms of use](https://bugsmash.io/terms-of-use/)
 - [BugSmash website](https://bugsmash.io)
+
+## License
+
+This plugin package is available under the [MIT License](LICENSE). The license does not apply to the hosted BugSmash service or its backend source code.

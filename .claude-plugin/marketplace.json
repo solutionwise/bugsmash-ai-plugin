@@ -1,8 +1,10 @@
 {
   "name": "bugsmash",
-  "description": "Official BugSmash plugins for visual review and feedback workflows.",
   "owner": {
     "name": "BugSmash"
+  },
+  "metadata": {
+    "description": "Official BugSmash plugins for visual review and feedback workflows."
   },
   "plugins": [
     {

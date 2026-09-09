@@ -41,7 +41,7 @@ Confirm that the BugSmash MCP server is connected.
 3. Enter `https://api.bugsmash.io/mcp`.
 4. Leave client credentials empty. BugSmash supports dynamic client registration.
 5. Select **Connect**.
-6. Sign in to BugSmash, select a workspace, and approve access.
+6. Sign in to BugSmash and approve access.
 7. Enable BugSmash in a new chat.
 
 ## Functional test order
@@ -49,10 +49,10 @@ Confirm that the BugSmash MCP server is connected.
 1. List projects.
 2. Read one project and its versions.
 3. List comments for a project.
-4. Create a test project as a workspace owner or admin.
+4. Create a test project as a workspace owner, admin, or member with project creation access.
 5. Update the test project.
 6. Request deletion and verify that the agent asks for confirmation.
 7. Confirm the deletion and verify the result.
 8. Revoke the OAuth connection in BugSmash and verify that the old connection no longer works.
 
-Also test a member account. Read tools must work. Write tools must return a permission error.
+Also test a member account. MCP must apply the same permissions and limits as the BugSmash app and API. Guest and collaborator workspaces must not be available through MCP.
