@@ -1,5 +1,6 @@
 {
   "name": "bugsmash",
+  "displayName": "BugSmash",
   "description": "Manage BugSmash reviews and feedback through the hosted OAuth MCP server.",
   "version": "1.0.0",
   "author": {
