@@ -1,7 +1,7 @@
 {
   "name": "bugsmash",
   "displayName": "BugSmash",
-  "description": "Manage BugSmash reviews and feedback through the hosted OAuth MCP server.",
+  "description": "BugSmash is a collaborative review-feedback-approval platform designed for agencies, product teams, marketing teams to streamline the process of sharing any digital content and getting frictionless feedback & approval from clients and stakeholders. It's a review layer for the internet which allows anyone to comment directly on the content itself - be it live websites, dashboards, videos, PDFs, images, audios, and even mobile apps. Comments are pinned right where the context is! All feedback, progress, and approvals in one place—no more messy feedback loops, screenshots or scattered communication.",
   "version": "1.0.0",
   "author": {
     "name": "BugSmash",
