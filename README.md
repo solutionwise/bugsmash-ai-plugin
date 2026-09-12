@@ -1,6 +1,6 @@
 # BugSmash AI plugin
 
-This repository packages the BugSmash hosted MCP server for Codex and Claude Code.
+This repository packages the BugSmash hosted MCP server for Codex, Claude Code, and Cursor.
 
 The plugin connects to:
 
@@ -28,9 +28,11 @@ Tools use the same role, plan, and usage limits as BugSmash. Guests and collabor
 .
 ├── .agents/plugins/marketplace.json
 ├── .claude-plugin/marketplace.json
+├── .cursor-plugin/marketplace.json
 └── plugins/bugsmash
     ├── .claude-plugin/plugin.json
     ├── .codex-plugin/plugin.json
+    ├── .cursor-plugin/plugin.json
     ├── .mcp.json
     └── skills/manage-reviews
 ```
@@ -58,6 +60,27 @@ Add the marketplace and install the plugin:
 ```
 
 Run `/reload-plugins` after installation. Use `/mcp` if Claude Code asks you to authenticate.
+
+## Test and submit the Cursor plugin
+
+The Cursor manifest reuses `.mcp.json`, the logo, and the review skill in
+`plugins/bugsmash`. It does not contain a second MCP configuration.
+
+For local package discovery, link the plugin into Cursor's local plugin directory:
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+ln -s /absolute/path/to/bugsmash-ai-plugin/plugins/bugsmash ~/.cursor/plugins/local/bugsmash
+```
+
+Reload Cursor and open **Customize** to check the plugin. Local plugin imports
+must be permitted by your team. Connecting to the hosted MCP server accesses the
+production BugSmash service; do this only when that production test is authorized.
+
+After testing, submit the public repository link at
+[Cursor Marketplace](https://cursor.com/marketplace/publish).
+This package has not been submitted. Grok Bot availability must be confirmed
+separately; a Cursor manifest does not guarantee a Grok Bot listing.
 
 ## Use as a Claude custom connector
 

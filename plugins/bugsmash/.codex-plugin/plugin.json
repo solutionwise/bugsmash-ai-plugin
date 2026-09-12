@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "BugSmash",
     "shortDescription": "Manage visual reviews and feedback",
-    "longDescription": "Create and manage BugSmash projects, versions, folders, comments, replies, and webhooks. Sign in with BugSmash OAuth. No API key is required.",
+    "longDescription": "Create and manage BugSmash projects, versions, folders, comments, and replies. List, update, test, and delete existing webhooks. Create webhooks and complete signing-secret setup in the BugSmash dashboard. Sign in with BugSmash OAuth. No API key is required.",
     "developerName": "BugSmash",
     "category": "Productivity",
     "capabilities": [
