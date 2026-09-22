@@ -4,13 +4,13 @@
     "name": "BugSmash"
   },
   "metadata": {
-    "description": "Official BugSmash plugin for visual review and feedback workflows."
+    "description": "Instant Visual Feedback & Collaboration for Agencies, Product, Design & Marketing Teams"
   },
   "plugins": [
     {
       "name": "bugsmash",
       "source": "./plugins/bugsmash",
-      "description": "Manage BugSmash reviews and feedback through OAuth."
+      "description": "Instant Visual Feedback & Collaboration for Agencies, Product, Design & Marketing Teams"
     }
   ]
 }
