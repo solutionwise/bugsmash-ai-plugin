@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-hosted%20server-blue.svg)](https://docs.bugsmash.io)
 
-Connect Claude, Cursor, and Codex to [BugSmash](https://bugsmash.io) — the visual review and feedback platform for agencies, product, design, and marketing teams.
+Connect any MCP-compatible AI assistant — including Claude, ChatGPT, Cursor, and Codex — to [BugSmash](https://bugsmash.io), the visual review and feedback platform for agencies, product, design, and marketing teams.
 
 With this plugin your AI assistant can create review projects, upload versions, read and summarize feedback, reply to comments, organize folders, and manage webhooks — all from the chat you already work in.
 
@@ -38,10 +38,6 @@ Nothing runs locally and there is no server to host. This repository contains on
 ## Requirements
 
 - A [BugSmash](https://bugsmash.io) account
-- Membership in at least one workspace as an **owner, admin, or member** with MCP enabled
-- One of the supported clients below
-
-Guests and collaborators cannot access a workspace through MCP.
 
 ## Authentication
 
