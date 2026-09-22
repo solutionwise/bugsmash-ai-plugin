@@ -1,7 +1,7 @@
 # BugSmash AI Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MCP](https://img.shields.io/badge/MCP-hosted%20server-blue.svg)](https://api.bugsmash.io/mcp)
+[![MCP](https://img.shields.io/badge/MCP-hosted%20server-blue.svg)](https://docs.bugsmash.io)
 
 Connect Claude, Cursor, and Codex to [BugSmash](https://bugsmash.io) — the visual review and feedback platform for agencies, product, design, and marketing teams.
 
@@ -50,7 +50,7 @@ BugSmash uses **OAuth 2.1 with PKCE**. The first time your assistant calls a Bug
 - No API keys to copy, paste, or store
 - The plugin never requests, stores, or proxies a BugSmash API key
 - Access follows the same roles, plan, and usage limits as the BugSmash app
-- Revoke access at any time from your BugSmash account settings
+- Revoke the connection at any time from BugSmash; the assistant loses access immediately
 
 ## Installation
 
@@ -77,9 +77,14 @@ You can connect BugSmash directly as a custom connector — no plugin required:
 
 ### Cursor
 
-Open **Customize** in the sidebar, search for **BugSmash**, and select **Install** at the user or project scope.
+Add this repository as a marketplace: go to **Dashboard → Plugins & MCPs**, choose **Add Marketplace** under **Team Marketplaces**, select **Import from Repo**, and paste `https://github.com/solutionwise/bugsmash-ai-plugin`. The plugin then appears under **Customize** in the Cursor sidebar, where you can select **Install** at the user or project scope.
 
-If your team manages plugins centrally, an admin can add this repository as a team marketplace: go to **Dashboard → Plugins & MCPs**, choose **Add Marketplace** under **Team Marketplaces**, select **Import from Repo**, and paste `https://github.com/solutionwise/bugsmash-ai-plugin`.
+To try it on a single machine instead, clone this repository and link the plugin into Cursor's local plugin folder, then reload Cursor (**Developer: Reload Window**):
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+ln -s /absolute/path/to/bugsmash-ai-plugin/plugins/bugsmash ~/.cursor/plugins/local/bugsmash
+```
 
 ### Codex
 
@@ -90,7 +95,7 @@ codex plugin marketplace add solutionwise/bugsmash-ai-plugin
 codex plugin add bugsmash@bugsmash
 ```
 
-Or open the **Plugins** tab in the ChatGPT desktop app, search for **BugSmash**, and install it. Start a new task after installing; the first BugSmash tool call opens the sign-in flow.
+Start a new task after installing; the first BugSmash tool call opens the sign-in flow.
 
 ### Any other MCP client
 
